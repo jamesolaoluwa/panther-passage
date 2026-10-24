@@ -3,7 +3,7 @@
     "name": "Panther Passage",
     "slug": "panther-passage-ipad-shell",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "scheme": "pantherpassage",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
