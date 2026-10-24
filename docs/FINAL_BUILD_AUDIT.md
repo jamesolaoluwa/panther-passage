@@ -8,12 +8,12 @@ Panther Passage remains a proposed competition demonstration. Nothing in the app
 | --- | --- |
 | Welcome | `public/assets/panther-passage/03_Welcome/Welcome_Approved_Frameless.png` |
 | Onboarding footer | `public/assets/panther-passage/02_Campus/Panther_Passage_Onboarding_Campus_Footer.png` |
-| Journey map | `public/assets/panther-passage/04_Journey_Map/Mobile/Journey_Map_Campus_Artwork.png` (576×683 crop of the supplied screenshot, rows 249–931) |
+| Journey map | Approved campus file used as a full-width trailhead. Live nodes, banners, and the road are drawn from catalog data in `PassagePath`. |
 | Finale atmosphere | The same approved onboarding footer, not a new illustration |
 | Milestone, dashboard, and supporting screens | Live interface using Fraunces, Manrope, evergreen, gold, and ivory. No milestone-details reference image was in the repository. |
 | Chapter crests | Named in the interface. `09_Assets/Achievements/crest-*.svg` is not present, so no crest image is shown. |
 
-The journey file is the original artwork. The app does not redraw the campus, the path, or the medallions. Painted labels inside that picture are not catalog titles and are not treated as live progress.
+The campus file is the original artwork and is not redrawn. The winding path, chapter banners, and fifteen nodes are a separate live layer. Painted labels inside the campus picture are not catalog titles and are not treated as live progress. Student portraits are the user-supplied fictional photos in `public/assets/panther-passage/avatars/`, with the earlier SVGs as fallback.
 
 ## Behavior that is implemented
 
@@ -29,9 +29,10 @@ The journey file is the original artwork. The app does not redraw the campus, th
 ## Checks actually run
 
 - Typecheck passed.
-- Vitest passed: 14 files, 71 tests, including unlock rules, onboarding, journey artwork, task completion, bookmarks, RSVP, reflections, goals, and the finale gate. Re-run and still passing after the tablet layout changes.
-- Production build passed, with the usual single-chunk size warning.
-- Rendered welcome, onboarding, home, journey, milestone detail, resources, and profile were inspected in the iPad Air 13-inch (M3) simulator on iOS 26, Safari WebKit, with a standardized 9:41 status bar.
+- Vitest passed: 16 files, 81 tests, including unlock rules, onboarding, the live 15-node path, node pop-up Escape close, avatar photos, `diffPathStatuses`, task completion, bookmarks, RSVP, reflections, goals, and the finale gate.
+- Production build passed, with the usual single-chunk size warning (about 727 kB before gzip).
+- Deployed at `https://panther-passage.onrender.com` from `https://github.com/jamesolaoluwa/panther-passage`. Home, campus art, avatars, and milestone SVGs returned 200. Hard refresh of `/journey` returns 404 on this Render static site (no SPA rewrite applied by the MCP create). The Expo shell always enters at `/`.
+- Rendered welcome and My Passage (Jordan, new student) on the iPad Pro 13-inch (M4) simulator in Expo Go, iOS 26, portrait, 9:41 status bar. The winding path, START bubble, node pop-up, two-column list, and Jordan photo avatar were visible. Avery and Morgan avatar files are served; switching those students was not re-walked in this simulator session after the 13-inch cutover.
 
 ## iPad responsiveness audit
 
@@ -39,7 +40,7 @@ Checked with viewport emulation and simulator rendering, in portrait and landsca
 
 - No horizontal overflow was found on welcome, onboarding, home, journey, milestone detail, resources, or profile at 390px, 744px, 820px, 1024px, 1180px, 1194px, or 1366px.
 - The welcome image stays centered and letterboxed on ivory with no crop.
-- The journey map buttons stay aligned to the painted medallions, since both are positioned by percentage over the same artwork. The two-column map and list appears from 900px.
+- The live path nodes are data-driven and sit on a serpentine road, not on painted medallions. The two-column path and list appears from 900px.
 - Scenario switching from Profile loads Jordan, Avery, and Morgan with their own seeds; Avery showed 7 of 15 preparation and 5 of 11 required after switching.
 
 Issues found and fixed:
@@ -50,9 +51,10 @@ Issues found and fixed:
 
 ## Recording readiness
 
-- Added `public/manifest.webmanifest` and Apple web-app meta tags in `index.html` so the demo can launch full screen from the home screen. No custom home-screen icon is bundled; the approved wordmark is not approximated into an app icon.
-- `docs/DEMO_WALKTHROUGH.md` has step-by-step iPad simulator recording instructions.
-- Before and after reference screenshots are in `docs/screenshots/ipad/`.
+- Recording target is the iPad Pro 13-inch (M4) Simulator in portrait, via `ipad-shell/` Expo Go WebView loading `https://panther-passage.onrender.com`.
+- Status bar is overridden to 9:41, full battery, full Wi-Fi. Hardware keyboard is off. Appearance is light.
+- `docs/DEMO_WALKTHROUGH.md` has the current recording steps. Use an external recorder.
+- Simulator screenshots from this pass are in `docs/screenshots/ipad-13-01.png` and `docs/screenshots/ipad-13-02.png`.
 
 ## Intentional limits
 

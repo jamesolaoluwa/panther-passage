@@ -114,7 +114,7 @@ export function JourneyScreen() {
         </h2>
         <p className="mt-1 text-sm text-ink-soft">
           {pathway ? `${pathway.title}. ` : ''}
-          The painted checks stay in the artwork. The list reaches every step, including those past this scene.
+          The winding path shows every step. This list is the same passage in order, for keyboard and screen-reader use.
         </p>
         <nav aria-label="Jump to a chapter" className="mt-3 flex flex-wrap gap-2">
           {catalog.chapters.map((chapter) => (

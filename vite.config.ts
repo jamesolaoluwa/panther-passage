@@ -14,5 +14,7 @@ export default defineConfig({
     globals: true,
     setupFiles: './src/test/setup.ts',
     css: true,
+    // The Expo iPad shell is a separate React Native project; keep it out of the web test run.
+    exclude: ['**/node_modules/**', '**/dist/**', '**/ipad-shell/**'],
   },
 })

@@ -20,6 +20,9 @@ export function ProfileScreen() {
   const [confirmReset, setConfirmReset] = useState(false)
   const profile = progress.onboardingProfile
   const pathway = pathwayOption(profile?.pathway || student.pathway)
+  // Show the name the user entered during onboarding; fall back to the sample student's name.
+  const enteredName = [profile?.firstName, profile?.lastName].filter(Boolean).join(' ').trim()
+  const displayName = enteredName || student.name
 
   return (
     <ScreenFrame
@@ -31,22 +34,18 @@ export function ProfileScreen() {
           <span className="size-16 shrink-0 overflow-hidden rounded-full ring-2 ring-gold">
             <ProfileAvatar studentId={student.id} />
           </span>
-          <p className="font-display text-3xl text-evergreen">{student.name}</p>
+          <p className="font-display text-3xl text-evergreen">{displayName}</p>
         </div>
         <p className="mt-1 text-sm text-ink-soft">
           {student.year} · Baccalaureate {formatCalendarDate(BACCALAUREATE_DATE)} · Commencement{' '}
           {formatCalendarDate(COMMENCEMENT_DATE)}
         </p>
         <p className="mt-2 text-sm">{pathway ? pathway.title : student.pathway}</p>
-        {profile?.step1Complete ? (
+        {profile?.major || profile?.graduationTerm ? (
           <p className="mt-2 text-sm">
-            Onboarding name: {profile.firstName} {profile.lastName}
-            {profile.major ? ` · ${profile.major}` : ''}
-            {profile.graduationTerm ? ` · ${profile.graduationTerm}` : ''}
+            {[profile.major, profile.graduationTerm].filter(Boolean).join(' · ')}
           </p>
-        ) : (
-          <p className="mt-2 text-sm">Onboarding answers have not been saved for this student.</p>
-        )}
+        ) : null}
         <div className="mt-4 flex flex-col gap-3">
           <Meter label="Preparation" completed={preparation.completed} total={preparation.total} />
           <Meter label="Required readiness" completed={readiness.completed} total={readiness.total} />

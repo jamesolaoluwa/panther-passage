@@ -16,7 +16,7 @@ Reset restores that student’s seed. It does not erase the other two students.
 2. Tell us about yourself. Continue only works when the required fields are valid. The student ID is demo text, not a login.
 3. Choose one direction, then at least one priority.
 4. Enter My Journey. The dashboard opens and milestone progress stays at the start.
-5. My Passage shows the campus artwork and lists M01 as the current step. Later steps stay locked.
+5. My Passage opens on a winding path with campus art as the trailhead. M01 is the current step, with a START bubble. Later nodes stay locked. Tapping a node opens a pop-up; Start step opens the milestone.
 6. Open Name Your North Star. Write the north-star note, then Continue milestone. M02 becomes the current step.
 7. The finale stays closed. Readiness explains that this is not university clearance.
 
@@ -41,29 +41,29 @@ Reset restores that student’s seed. It does not erase the other two students.
 
 A warning appears when local storage fails. Progress then lasts only for that visit. Use reset after the warning clears if the story needs the original seed.
 
-## Recording the demo on an iPad simulator
+## Recording the demo on iPad Pro 13-inch (M4)
 
-These steps record a clean demo on an iPad simulator over the macOS loopback network. No real iPad or Wi-Fi setup is needed.
+The recording target is the **iPad Pro 13-inch (M4) Simulator** in portrait. The product is the deployed web app at `https://panther-passage.onrender.com`, loaded by a thin Expo Go WebView so Safari chrome is not in the frame. Use your own external recorder.
 
-1. Serve the production build, not the dev server, so there is no reload flicker:
-   - `npm run build`
-   - `npm run preview -- --port 4173 --host`
-2. Boot an iPad and open the Simulator window. Any of these work; the layout was audited on all of them:
-   - `xcrun simctl boot "iPad Air 13-inch (M3)"` then `open -a Simulator`
-   - Portrait and landscape are both supported. Rotate with Device, then Rotate Left or Rotate Right, or Command and the Left or Right arrow.
-3. Standardize the status bar so it reads the same in every take:
+The simulator has already been prepared in this session:
+
+- Device: iPad Pro 13-inch (M4), UDID `2D66C81E-3E7A-4C18-B083-431CAC287FA5`
+- Erased, light appearance, hardware keyboard off
+- Status bar override: 9:41, full Wi-Fi, full battery
+- Expo Go running `ipad-shell/`, which loads the live site
+
+If you need to start it again later:
+
+1. `cd ipad-shell && npx expo start --ios`
+2. Confirm Simulator is the 13-inch (M4) in portrait. Pixel Accurate is Device → Pixel Accurate (⌘1).
+3. Re-apply the status bar if iOS resets it:
    - `xcrun simctl status_bar booted override --time "9:41" --batteryState charged --batteryLevel 100 --wifiBars 3 --cellularMode notSupported`
-4. Open the app in the simulator Safari:
-   - `xcrun simctl openurl booted "http://localhost:4173"`
-5. Optional, for a recording with no Safari chrome: in the simulator Safari, use the Share control, then Add to Home Screen, then launch Panther Passage from the home screen. The web app manifest and the Apple web-app meta tags make it open full screen. There is no custom home-screen icon, because the approved logo must not be approximated into one; iPadOS uses a snapshot of the page instead.
-6. Reset the scenario you will show first, following the reset steps above, inside the simulator.
-7. Record:
-   - Start: `xcrun simctl io booted recordVideo --codec=h264 --force ~/Desktop/panther_passage_demo.mp4`
-   - Stop with Control and C in that terminal when the take is done.
-   - QuickTime Player, with New Movie Recording and the simulator as the source, is an equivalent alternative.
+4. If Expo Go shows its first-run developer sheet, tap Continue (or close it). Then wait a second so Fraunces and Manrope finish loading.
+5. Reset the first student from Profile before you roll.
 
 Walk the Jordan, Avery, and Morgan stories above. Switching students is on the Profile screen, which is intentionally outside the main navigation.
 
 Known simulator notes:
-- `xcrun simctl openurl` can print an "Operation timed out" message while still opening the page. Give Safari a few seconds and take a screenshot to confirm.
+- The first Expo Go launch can show a developer menu. Dismiss it once; it is not part of the product.
 - The bottom navigation is sticky. On a long screen such as Profile, scroll up a little to clear the navigation before tapping a control near the very bottom.
+- Reduced motion is honored through `MotionConfig reducedMotion="user"`. To demo it, enable Settings → Accessibility → Motion → Reduce Motion in the simulator.

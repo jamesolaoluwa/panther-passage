@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Panther Passage",
+    "slug": "panther-passage-ipad-shell",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "pantherpassage",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#10281f"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "userInterfaceStyle": "light",
+      "infoPlist": {
+        "UIRequiresFullScreen": true
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

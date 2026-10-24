@@ -372,7 +372,9 @@ export function PassagePath({
               <div
                 key={view.id}
                 ref={isActive ? activeNodeRef : undefined}
-                style={{ top: y, left: x }}
+                // Each node's translate creates its own stacking context, so an open
+                // pop-up must lift the whole node above later nodes (and their locks).
+                style={{ top: y, left: x, zIndex: openId === view.id ? 60 : undefined }}
                 className="absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center"
               >
                 {isActive ? (

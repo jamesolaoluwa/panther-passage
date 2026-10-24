@@ -10,9 +10,9 @@ Panther Passage is a **mobile-first web application** for the Last 100 Days HBCU
 
 The confirmed stack is React, Vite, TypeScript, Tailwind CSS, React Router, `@phosphor-icons/react`, Zod, browser `localStorage`, Vitest, and React Testing Library.
 
-React Native, Expo, and Expo Router were discussed and are **not approved**. Do not install them.
+**2026-10-24 update.** A thin Expo SDK 53 shell now lives in `ipad-shell/`. It does not reimplement the product. It loads the deployed web app in a full-screen WebView so the iPad Pro 13-inch (M4) simulator can be recorded without Safari chrome. Expo Router is still unused. The web app remains the product.
 
-The primary viewport is **390 × 844**. Layouts start as a portrait phone column and widen at 760px and 1040px so the dashboard and lists can sit in two columns. The journey artwork stays capped at 32rem wide.
+The primary viewport is **390 × 844**. Layouts start as a portrait phone column and widen at 760px and 1040px so the dashboard and lists can sit in two columns. The campus artwork is now a full-width trailhead scene; live nodes sit on a separate winding path.
 
 This decision replaces the stack recommendation in the master build instructions and the earlier “exact first implementation step” in this audit. Journey rules, fictional students, asset limits, and the Expressive Collegiate Editorial identity still stand. The plum/maroon token file remains unused. The working palette is the provisional evergreen, gold, ivory, and slate set. Fraunces and Manrope are labeled stand-ins, not Recoleta.
 
@@ -20,7 +20,7 @@ This decision replaces the stack recommendation in the master build instructions
 
 The My Passage screen shows the campus scene from the supplied screenshot, cropped to rows 249–931 so the baked phone header and bottom navigation are not drawn a second time. File: `public/assets/panther-passage/04_Journey_Map/Mobile/Journey_Map_Campus_Artwork.png` (576×683). The full screenshot is kept at `docs/reference/Journey_Map_Approved_Reference.png` and is byte-identical to the upload.
 
-The picture includes painted medallions and the labels “Discover Your Pathway” and “Build Your Graduation Readiness Plan.” Those marks do not match the fifteen catalog milestones or a student’s live progress, so they are not wired as controls and no second set of circles is drawn on top. Live status and navigation stay in the “All fifteen steps” list.
+**2026-10-24 update.** My Passage still uses that approved campus file as a full-width trailhead backdrop. The live passage is now a data-driven winding path (`src/components/journey/PassagePath.tsx`) with all fifteen catalog nodes, chapter banners, an SVG road, and a Duolingo-style node pop-up. Status still comes from the catalog, not from painted labels in the artwork. The “All fifteen steps” list remains the accessible structured view.
 
 ## Welcome screen — Phase 2 (image-first)
 
