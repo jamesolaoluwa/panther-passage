@@ -1,0 +1,15 @@
+---
+description: 100-day journey logic, type-safe datasets and progression invariants
+globs: "**/*.{ts,tsx,json}"
+alwaysApply: false
+---
+
+# Journey and data integrity
+- Use `08_Demo_Data/{students,chapters,milestones,tasks,resources,events,achievements,demo_scenarios}.json` if present. Inspect actual schema; never assume fields exist. Maintain stable IDs and valid references.
+- The original starter set has **five provisional chapters and fifteen milestones**; this is not confirmed official content. Never silently change the count or rename identifiers without checking data consumers.
+- Graduation **calendar countdown** and **preparation/task completion progress** are separate, independently calculated concepts. Neither implies official university graduation eligibility.
+- Derive available/locked/current/completed states from explicit prerequisite relations, task rules and stored completions; enforce business rules on update, not only in UI. Optional tasks cannot silently become requirements.
+- Avoid double awarding achievements or double counting completion. Recompute derived totals after task changes and demo scenario switches. Keep student-specific records isolated by fictional demo student ID.
+- For map visuals, render nodes from data rather than manually coding each node; keep environmental artwork and clickable nodes in distinct layers. Coordinates must correspond to actual assets and documented map dimensions.
+- Persist demo-only progress with versioned schema and error handling; reset must restore deterministic seed state. Never need external credentials for core demo actions.
+- Provide unit tests for unlock prerequisites, task completion, achievement idempotency, separate countdown/progress, and scenario switching.

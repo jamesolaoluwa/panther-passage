@@ -1,0 +1,24 @@
+[
+  {
+    "id": "E01",
+    "title": "Opportunity Conversation",
+    "date": "2027-03-18T15:00:00-05:00",
+    "location": "Simulated gathering",
+    "category": "career",
+    "capacity": 20,
+    "rsvpCount": 6,
+    "status": "simulated",
+    "description": "A simulated conversation about possibilities after graduation. It is not an interview and it is not a scheduled university event."
+  },
+  {
+    "id": "E02",
+    "title": "Next Chapter Circle",
+    "date": "2027-04-14T17:00:00-05:00",
+    "location": "Simulated community room",
+    "category": "connection",
+    "capacity": 12,
+    "rsvpCount": 9,
+    "status": "simulated",
+    "description": "Fictional peer transition discussion."
+  }
+]

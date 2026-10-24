@@ -1,0 +1,42 @@
+[
+  {
+    "id": "A01",
+    "chapterId": "P1",
+    "name": "Find Your Footing Crest",
+    "description": "Awarded when all required chapter milestones are completed.",
+    "criteria": "All required milestones in P1 complete",
+    "iconAsset": "09_Assets/Achievements/crest-1.svg"
+  },
+  {
+    "id": "A02",
+    "chapterId": "P2",
+    "name": "Build Your Toolkit Crest",
+    "description": "Awarded when all required chapter milestones are completed.",
+    "criteria": "All required milestones in P2 complete",
+    "iconAsset": "09_Assets/Achievements/crest-2.svg"
+  },
+  {
+    "id": "A03",
+    "chapterId": "P3",
+    "name": "Make Your Moves Crest",
+    "description": "Awarded when all required chapter milestones are completed.",
+    "criteria": "All required milestones in P3 complete",
+    "iconAsset": "09_Assets/Achievements/crest-3.svg"
+  },
+  {
+    "id": "A04",
+    "chapterId": "P4",
+    "name": "Ready for What’s Next Crest",
+    "description": "Awarded when all required chapter milestones are completed.",
+    "criteria": "All required milestones in P4 complete",
+    "iconAsset": "09_Assets/Achievements/crest-4.svg"
+  },
+  {
+    "id": "A05",
+    "chapterId": "P5",
+    "name": "Carry It Forward Crest",
+    "description": "Awarded when all required chapter milestones are completed.",
+    "criteria": "All required milestones in P5 complete",
+    "iconAsset": "09_Assets/Achievements/crest-5.svg"
+  }
+]

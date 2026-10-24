@@ -1,0 +1,13 @@
+---
+description: Competition presentation scenarios and demo reliability
+globs: "**/*.{ts,tsx,json,md}"
+alwaysApply: false
+---
+
+# Competition demo discipline
+- The demo must reliably tell the student story from welcome to preparation to celebration, not just offer unrelated polished pages.
+- Support three **fictional** stable scenarios: New Student, Student in Progress, Almost Graduated. Keep dates, milestones, completion percentages, unlocks and awards consistent with the actual seed datasets.
+- Provide explicit scenario switch/reset controls in a discrete demo area, not in normal student primary navigation. Switching state must be atomic and predictable.
+- Core interactions should work locally without institutional authentication or live web APIs. Make simulated RSVP, event, resource and student data unmistakably demo-only.
+- Prioritize a functional vertical slice: welcome -> onboarding -> journey map -> milestone detail -> task completion -> progress -> readiness/finale; then expand supporting features.
+- Write concise presenter directions, deterministic reset steps and an offline/backup checklist. Do not claim measured outcomes, institutional adoption, or university approval without verified evidence.

@@ -1,0 +1,11 @@
+{
+  "name": "Panther Passage",
+  "short_name": "Panther Passage",
+  "description": "A simulated Last 100 Days preparation experience for the HBCU Challenge. Not an official university system.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F7F4EB",
+  "theme_color": "#F7F4EB"
+}

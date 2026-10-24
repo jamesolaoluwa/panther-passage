@@ -1,0 +1,54 @@
+{
+  "splash": {
+    "brand": [
+      "01_Branding/Logos/Panther_Passage_APPROVED_Logo_Original.png"
+    ],
+    "background": "MISSING: clean mobile campus splash image without baked UI"
+  },
+  "welcome": {
+    "visual_reference": [
+      "03_Welcome/Mobile/Welcome_Updated_Landscaping_Phone_Mockup.png"
+    ],
+    "overlay": [
+      "03_Welcome/Foreground_Layers/Ivory_Text_Scrim.svg"
+    ],
+    "required_native_ui": [
+      "Get Started button",
+      "headline",
+      "supporting paragraph"
+    ]
+  },
+  "journey_mobile": {
+    "reference": [
+      "04_Journey_Map/Mobile/Portrait_Journey_Concept.png"
+    ],
+    "path": [
+      "04_Journey_Map/Pathways/mobile_route.svg"
+    ],
+    "badges": [
+      "06_Milestones/Completed/Milestone_Completed.svg",
+      "06_Milestones/Locked/Milestone_Locked.svg"
+    ],
+    "background": "MISSING: clean campus image without baked UI"
+  },
+  "journey_desktop": {
+    "reference": [
+      "04_Journey_Map/Desktop/Photoreal_Journey_Map_PREFERRED_REFERENCE.png"
+    ],
+    "path": [
+      "04_Journey_Map/Pathways/desktop_route.svg"
+    ],
+    "background": "MISSING: clean campus image without baked UI"
+  },
+  "milestone_detail": {
+    "badge_state_dir": "06_Milestones",
+    "description": "Custom badge plus native React label; chapter hero image pending"
+  },
+  "resource_hub": {
+    "icons": "@phosphor-icons/react; no redundant icon raster",
+    "hero": "MISSING: approved resource category illustrations"
+  },
+  "graduation": {
+    "hero": "MISSING: verified campus-based final graduation destination"
+  }
+}

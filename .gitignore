@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+.vite
+*.local
+.DS_Store
+coverage
+
+# Expo shell
+ipad-shell/node_modules
+ipad-shell/.expo

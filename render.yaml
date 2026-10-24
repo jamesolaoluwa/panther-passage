@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: panther-passage
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: false
+    # Single-page app: send every unknown path to index.html so client-side
+    # routing (BrowserRouter) handles deep links and refreshes.
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

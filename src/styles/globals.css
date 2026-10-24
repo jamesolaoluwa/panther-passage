@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Manrope", Arial, sans-serif;
+  --color-ivory: #f7f4eb;
+  --color-paper: #ffffff;
+  --color-evergreen: #173f35;
+  --color-evergreen-bright: #146b50;
+  --color-gold: #d7ad56;
+  --color-gold-bright: #f2bd49;
+  --color-slate: #263641;
+  --color-mint: #b8d9c9;
+  --color-focus: #214ed5;
+  --color-danger: #a72b40;
+
+  /* Sampled from the approved onboarding reference (docs/reference/Onboarding_Step1_Approved_Reference.png). */
+  --color-onboarding-surface: #f7f4eb;
+  --color-choice-border: #e4dfd4;
+  --color-choice-selected: #eef4ef;
+  --color-icon-well: #f3efe4;
+  --color-icon-well-selected: #e5eee7;
+  --color-icon-well-gold: #f4ead4;
+  --color-icon-gold: #c9a03a;
+  --color-priority-selected: #eef4ef;
+  --color-priority-selected-border: #173f35;
+  --color-summary-well: #eef3e6;
+  --color-field: #fcf9f4;
+  --color-field-border: #d3cfc6;
+  --color-ink: #10261e;
+  --color-ink-soft: #1c2622;
+  --color-placeholder: #6f6d70;
+  --color-gold-deep: #da9e2c;
+  --color-step-idle: #c8c1b9;
+  --color-step-line: #d4d1c8;
+}
+
+html {
+  background: var(--color-evergreen);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--color-evergreen);
+  color: var(--color-slate);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  transform: translateY(-200%);
+  background: var(--color-paper);
+  color: var(--color-evergreen);
+  padding: 0.5rem 0.75rem;
+  z-index: 30;
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.onboarding-input::placeholder {
+  color: var(--color-placeholder);
+  opacity: 1;
+  font-size: 13px;
+}
+
+@media (min-width: 385px) {
+  .onboarding-input::placeholder {
+    font-size: 14px;
+  }
+}
+
+/* The empty select keeps 16px text (no iOS focus zoom) but shows a 14px placeholder like the inputs. */
+.onboarding-select-empty {
+  color: transparent;
+}
+
+.onboarding-select-empty option,
+.onboarding-select-empty optgroup {
+  color: var(--color-ink);
+}
+
+.onboarding-select-placeholder {
+  position: absolute;
+  inset: 0 2.75rem 0 1rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  color: var(--color-placeholder);
+  font-size: 13px;
+}
+
+@media (min-width: 385px) {
+  .onboarding-select-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (forced-colors: active) {
+  .onboarding-select-empty {
+    color: CanvasText;
+  }
+
+  .onboarding-select-placeholder {
+    display: none;
+  }
+}
+
+@keyframes passage-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.passage-rise {
+  animation: passage-rise 0.55s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

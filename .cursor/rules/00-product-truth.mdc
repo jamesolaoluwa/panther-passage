@@ -1,0 +1,13 @@
+---
+description: Panther Passage identity and source-of-truth safeguards
+alwaysApply: true
+---
+
+# Panther Passage: product truth
+- Panther Passage is a **proposed** Last 100 Days HBCU Challenge experience for graduating students at Philander Smith University; it is not an official institutional system.
+- Read `CURSOR_MASTER_BUILD_INSTRUCTIONS.md` (if present), the actual project concept, `PROJECT_CONTEXT.md`, `ASSUMPTIONS_AND_DECISIONS.md`, and relevant feature/screen specifications before changes. Inspect files; do not pretend unavailable content was read.
+- Authority: latest explicitly approved user references > approved concept documentation > explicit past decisions recorded in workspace > screen/design specs > verified assets > provisional starter package > new suggestions. Flag material conflicts in `docs/IMPLEMENTATION_AUDIT.md`.
+- Never invent university partnerships, services, policies, graduation clearance, SSO, live events or measured impact. Mark fictional opportunities and simulated actions as demo-only.
+- Protect the approved logo, wordmark and welcome-screen composition. Do not substitute a generated approximation for an unavailable original.
+- Keep assumptions reversible, explicitly labeled, and centralized. Where there is an unresolved item, continue with safe provisional implementation instead of misrepresenting approval.
+- Product purpose: meaningful postcollege preparation, not points or gamification for its own sake.

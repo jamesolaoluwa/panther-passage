@@ -1,0 +1,143 @@
+{
+  "mobile": {
+    "canvas_size": [
+      900,
+      2400
+    ],
+    "coordinate_space": "SVG viewBox units",
+    "path_d": "M 450 2340 Q 450 2340 365.0 2200.0 Q 280 2060 420.0 1920.0 Q 560 1780 455.0 1650.0 Q 350 1520 470.0 1385.0 Q 590 1250 465.0 1115.0 Q 340 980 440.0 835.0 Q 540 690 430.0 550.0 Q 320 410 410.0 245.0 T 500 80",
+    "anchor_points": [
+      {
+        "id": "sample_1",
+        "x": 450,
+        "y": 2340,
+        "x_percent": 50.0,
+        "y_percent": 97.5
+      },
+      {
+        "id": "sample_2",
+        "x": 280,
+        "y": 2060,
+        "x_percent": 31.11,
+        "y_percent": 85.83
+      },
+      {
+        "id": "sample_3",
+        "x": 560,
+        "y": 1780,
+        "x_percent": 62.22,
+        "y_percent": 74.17
+      },
+      {
+        "id": "sample_4",
+        "x": 350,
+        "y": 1520,
+        "x_percent": 38.89,
+        "y_percent": 63.33
+      },
+      {
+        "id": "sample_5",
+        "x": 590,
+        "y": 1250,
+        "x_percent": 65.56,
+        "y_percent": 52.08
+      },
+      {
+        "id": "sample_6",
+        "x": 340,
+        "y": 980,
+        "x_percent": 37.78,
+        "y_percent": 40.83
+      },
+      {
+        "id": "sample_7",
+        "x": 540,
+        "y": 690,
+        "x_percent": 60.0,
+        "y_percent": 28.75
+      },
+      {
+        "id": "sample_8",
+        "x": 320,
+        "y": 410,
+        "x_percent": 35.56,
+        "y_percent": 17.08
+      },
+      {
+        "id": "sample_9",
+        "x": 500,
+        "y": 80,
+        "x_percent": 55.56,
+        "y_percent": 3.33
+      }
+    ],
+    "note": "Illustrative node positions for generated vector overlay; NOT positions mapped to photographed background or confirmed milestone catalog."
+  },
+  "desktop": {
+    "canvas_size": [
+      1600,
+      900
+    ],
+    "coordinate_space": "SVG viewBox units",
+    "path_d": "M 110 820 Q 110 820 215.0 760.0 Q 320 700 450.0 715.0 Q 580 730 645.0 660.0 Q 710 590 850.0 550.0 Q 990 510 1015.0 430.0 Q 1040 350 1160.0 300.0 Q 1280 250 1365.0 165.0 T 1450 80",
+    "anchor_points": [
+      {
+        "id": "sample_1",
+        "x": 110,
+        "y": 820,
+        "x_percent": 6.88,
+        "y_percent": 91.11
+      },
+      {
+        "id": "sample_2",
+        "x": 320,
+        "y": 700,
+        "x_percent": 20.0,
+        "y_percent": 77.78
+      },
+      {
+        "id": "sample_3",
+        "x": 580,
+        "y": 730,
+        "x_percent": 36.25,
+        "y_percent": 81.11
+      },
+      {
+        "id": "sample_4",
+        "x": 710,
+        "y": 590,
+        "x_percent": 44.38,
+        "y_percent": 65.56
+      },
+      {
+        "id": "sample_5",
+        "x": 990,
+        "y": 510,
+        "x_percent": 61.88,
+        "y_percent": 56.67
+      },
+      {
+        "id": "sample_6",
+        "x": 1040,
+        "y": 350,
+        "x_percent": 65.0,
+        "y_percent": 38.89
+      },
+      {
+        "id": "sample_7",
+        "x": 1280,
+        "y": 250,
+        "x_percent": 80.0,
+        "y_percent": 27.78
+      },
+      {
+        "id": "sample_8",
+        "x": 1450,
+        "y": 80,
+        "x_percent": 90.62,
+        "y_percent": 8.89
+      }
+    ],
+    "note": "Illustrative node positions for generated vector overlay; NOT positions mapped to photographed background or confirmed milestone catalog."
+  }
+}

@@ -1,0 +1,14 @@
+---
+description: Brand design fidelity, typography, colors and interface patterns
+globs: "**/*.{tsx,jsx,css,scss,svg}"
+alwaysApply: false
+---
+
+# Expressive Collegiate Editorial
+- Build a premium, warm, distinctive, mobile-first experience rooted in campus architecture, open brick pathways, restrained greenery, editorial rhythm and graduation anticipation.
+- Respect supplied approved mockups and assets over generalized aesthetic advice. The revised welcome screen has **no** “I already have an account” footer; the paragraph below Get Started reads: “Plan your next steps, discover resources, and move confidently toward graduation and beyond.” Do not duplicate it.
+- Consume `05_Design_System/Design_Tokens.json` and the actual confirmed brand assets. Exact color values in the starter package are **provisional** until approved. Centralize colors; do not state a provisional palette is official.
+- Respect Recoleta-*inspired* expressive display typography; load the actual licensed font only if provided. Do not pirate fonts or claim unavailable typefaces are bundled. Use a deliberate, readable body pairing and responsive scale.
+- Favor strong typography, intentional asymmetry, refined hierarchy, layered architecture, generous useful space and controlled texture. Avoid generic SaaS card grids, purple-gradient templates, glassmorphism, random blobs and unrelated visual ornaments.
+- Functional interface icons come from `@phosphor-icons/react`; default navigation regular, selected navigation fill, resource categories duotone when appropriate. Do not mix icon sets. Custom illustrated medallions, chapter emblems and achievements must use approved/provisional branded assets, never enlarged stock icons masquerading as final art.
+- Never flatten functional labels/buttons into background images. Maintain text contrast, focus visibility and responsiveness.

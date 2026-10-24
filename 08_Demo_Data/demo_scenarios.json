@@ -1,0 +1,23 @@
+[
+  {
+    "id": "new",
+    "studentId": "S-A",
+    "startRoute": "/home",
+    "narrative": "First-day orientation, map discovery, first intention.",
+    "resetMethod": "Select scenario in demo switcher, which restores seeded state."
+  },
+  {
+    "id": "in-progress",
+    "studentId": "S-B",
+    "startRoute": "/home",
+    "narrative": "Explore the map, complete a task, open resources and RSVP.",
+    "resetMethod": "Select scenario in demo switcher, which restores seeded state."
+  },
+  {
+    "id": "almost-graduated",
+    "studentId": "S-C",
+    "startRoute": "/home",
+    "narrative": "Review crest collection and complete graduation destination.",
+    "resetMethod": "Select scenario in demo switcher, which restores seeded state."
+  }
+]

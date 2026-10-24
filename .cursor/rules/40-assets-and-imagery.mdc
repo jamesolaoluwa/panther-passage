@@ -1,0 +1,15 @@
+---
+description: Verified asset usage, image treatment and Phosphor mapping
+globs: "**/*.{tsx,jsx,css,scss,json,md}"
+alwaysApply: false
+---
+
+# Asset integrity
+- Check `Panther_Passage_Visual_Assets/ASSET_MANIFEST.json` and real file paths before referencing an asset. Existing starter illustrations are **provisional**, not approved originals.
+- Preserve approved Panther Passage branding precisely; never regenerate or pretend official university insignia/campus photography are authentic. Label stylized campus interpretations.
+- Approved welcome visuals take priority over generating new scenery; preserve visible walkways, architecture and reduced greenery.
+- Use `@phosphor-icons/react` for functional icons, not exported raster icon sheets. Document icon names and weights in `ICON_SYSTEM.md` when present.
+- Custom journey medallions, chapter emblems, reward crests and finale art belong to the branded asset library. Do not replace them with generic Phosphor icons as a final solution.
+- Use optimized responsive formats and appropriate `alt` text (empty alt for purely decorative imagery). Provide fixed aspect/size to minimize layout shifts and lazy load nonessential illustrations.
+- Never use a non-existent path as though it works. If artwork is missing, implement an accessible named fallback and record the missing asset in `docs/IMPLEMENTATION_AUDIT.md`.
+- Environment backgrounds must not contain baked-in labels, buttons, milestones or interactive controls unless explicitly a noninteractive preview.

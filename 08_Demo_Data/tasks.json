@@ -1,0 +1,407 @@
+[
+  {
+    "id": "T011",
+    "milestoneId": "M01",
+    "order": 1,
+    "label": "Name the direction you are considering",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T012",
+    "milestoneId": "M01",
+    "order": 2,
+    "label": "Write the goals and interests you want to keep",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T013",
+    "milestoneId": "M01",
+    "order": 3,
+    "label": "Save one next step you will actually take",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T021",
+    "milestoneId": "M02",
+    "order": 1,
+    "label": "Review money, wellness, community, and purpose",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T022",
+    "milestoneId": "M02",
+    "order": 2,
+    "label": "Write the two priorities you will protect",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T023",
+    "milestoneId": "M02",
+    "order": 3,
+    "label": "Save your readiness plan",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T031",
+    "milestoneId": "M03",
+    "order": 1,
+    "label": "List three experiences",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T032",
+    "milestoneId": "M03",
+    "order": 2,
+    "label": "Name two strengths",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T033",
+    "milestoneId": "M03",
+    "order": 3,
+    "label": "Write a 50-word story",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T041",
+    "milestoneId": "M04",
+    "order": 1,
+    "label": "Name the work you want to grow toward",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T042",
+    "milestoneId": "M04",
+    "order": 2,
+    "label": "List the strengths you already bring",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T043",
+    "milestoneId": "M04",
+    "order": 3,
+    "label": "Write one opportunity you want to understand",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T051",
+    "milestoneId": "M05",
+    "order": 1,
+    "label": "Draft 30-second introduction",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T052",
+    "milestoneId": "M05",
+    "order": 2,
+    "label": "Add a proof point",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T053",
+    "milestoneId": "M05",
+    "order": 3,
+    "label": "Save your introduction",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T061",
+    "milestoneId": "M06",
+    "order": 1,
+    "label": "Pick a type of contact",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T062",
+    "milestoneId": "M06",
+    "order": 2,
+    "label": "Draft outreach message",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T063",
+    "milestoneId": "M06",
+    "order": 3,
+    "label": "Identify a follow-up date",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T071",
+    "milestoneId": "M07",
+    "order": 1,
+    "label": "Choose two pathways",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T072",
+    "milestoneId": "M07",
+    "order": 2,
+    "label": "List one requirement each",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T073",
+    "milestoneId": "M07",
+    "order": 3,
+    "label": "Select a near-term experiment",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T081",
+    "milestoneId": "M08",
+    "order": 1,
+    "label": "Name one opportunity that fits your direction",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T082",
+    "milestoneId": "M08",
+    "order": 2,
+    "label": "Write what you need to learn before you pursue it",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T083",
+    "milestoneId": "M08",
+    "order": 3,
+    "label": "Save the next action you will take",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T091",
+    "milestoneId": "M09",
+    "order": 1,
+    "label": "Add two supporters",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T092",
+    "milestoneId": "M09",
+    "order": 2,
+    "label": "Write what help you might ask for",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T093",
+    "milestoneId": "M09",
+    "order": 3,
+    "label": "Save support map",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T101",
+    "milestoneId": "M10",
+    "order": 1,
+    "label": "Choose estimated income",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T102",
+    "milestoneId": "M10",
+    "order": 2,
+    "label": "Allocate essential expenses",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T103",
+    "milestoneId": "M10",
+    "order": 3,
+    "label": "Check remaining balance",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T111",
+    "milestoneId": "M11",
+    "order": 1,
+    "label": "Choose two grounding practices",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T112",
+    "milestoneId": "M11",
+    "order": 2,
+    "label": "Identify support options",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T113",
+    "milestoneId": "M11",
+    "order": 3,
+    "label": "Set a weekly check-in",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T121",
+    "milestoneId": "M12",
+    "order": 1,
+    "label": "Pick a destination type",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T122",
+    "milestoneId": "M12",
+    "order": 2,
+    "label": "Prioritize three decision factors",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T123",
+    "milestoneId": "M12",
+    "order": 3,
+    "label": "Save a relocation checklist",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T131",
+    "milestoneId": "M13",
+    "order": 1,
+    "label": "Set goal",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T132",
+    "milestoneId": "M13",
+    "order": 2,
+    "label": "Create three dated actions",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T133",
+    "milestoneId": "M13",
+    "order": 3,
+    "label": "Flag first action",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T141",
+    "milestoneId": "M14",
+    "order": 1,
+    "label": "Reflect on growth",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T142",
+    "milestoneId": "M14",
+    "order": 2,
+    "label": "Write a short advice note",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T143",
+    "milestoneId": "M14",
+    "order": 3,
+    "label": "Choose private or showcase demo setting",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T151",
+    "milestoneId": "M15",
+    "order": 1,
+    "label": "Review completed work",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T152",
+    "milestoneId": "M15",
+    "order": 2,
+    "label": "Select one promise to yourself",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  },
+  {
+    "id": "T153",
+    "milestoneId": "M15",
+    "order": 3,
+    "label": "Activate graduation celebration",
+    "type": "checkbox-or-saved-text",
+    "required": true,
+    "validation": "Checkbox true; any text response trimmed 1–500 chars where entered"
+  }
+]

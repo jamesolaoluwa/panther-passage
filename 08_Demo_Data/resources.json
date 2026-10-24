@@ -1,0 +1,92 @@
+[
+  {
+    "id": "R01",
+    "title": "Professional direction notes",
+    "category": "career",
+    "summary": "A short way to describe the contribution you want and the strengths you already have.",
+    "provider": "Panther Passage demo guidance (fictional, not a university service)",
+    "url": null,
+    "tags": [
+      "career"
+    ],
+    "associatedMilestones": [
+      "M04"
+    ],
+    "status": "simulated"
+  },
+  {
+    "id": "R02",
+    "title": "Mentor outreach starter",
+    "category": "network",
+    "summary": "A respectful note template and suggested follow-up.",
+    "provider": "Panther Passage demo guidance (fictional, not a university service)",
+    "url": null,
+    "tags": [
+      "network"
+    ],
+    "associatedMilestones": [
+      "M06"
+    ],
+    "status": "simulated"
+  },
+  {
+    "id": "R03",
+    "title": "Starter budget worksheet",
+    "category": "finance",
+    "summary": "Practice with an estimated first-month budget.",
+    "provider": "Panther Passage demo guidance (fictional, not a university service)",
+    "url": null,
+    "tags": [
+      "finance"
+    ],
+    "associatedMilestones": [
+      "M10"
+    ],
+    "status": "simulated"
+  },
+  {
+    "id": "R04",
+    "title": "Transition wellbeing ideas",
+    "category": "wellness",
+    "summary": "Plan rest, relationships, and when to seek trusted support.",
+    "provider": "Panther Passage demo guidance (fictional, not a university service)",
+    "url": null,
+    "tags": [
+      "wellness"
+    ],
+    "associatedMilestones": [
+      "M11"
+    ],
+    "status": "simulated"
+  },
+  {
+    "id": "R05",
+    "title": "30-day launch planning guide",
+    "category": "planning",
+    "summary": "Convert intentions into time-bound next actions.",
+    "provider": "Panther Passage demo guidance (fictional, not a university service)",
+    "url": null,
+    "tags": [
+      "planning"
+    ],
+    "associatedMilestones": [
+      "M13"
+    ],
+    "status": "simulated"
+  },
+  {
+    "id": "R06",
+    "title": "Legacy reflection prompts",
+    "category": "legacy",
+    "summary": "Capture a lesson for those who follow.",
+    "provider": "Panther Passage demo guidance (fictional, not a university service)",
+    "url": null,
+    "tags": [
+      "legacy"
+    ],
+    "associatedMilestones": [
+      "M14"
+    ],
+    "status": "simulated"
+  }
+]

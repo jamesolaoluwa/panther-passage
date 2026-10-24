@@ -1,0 +1,14 @@
+---
+description: Production-grade frontend design and interaction craft
+globs: "**/*.{ts,tsx,jsx,css,scss}"
+alwaysApply: false
+---
+
+# Frontend excellence
+- Before writing a screen, inspect its spec, relevant images, user flow and actual data. Form one coherent composition, not a different theme for each page.
+- Implement real React/TypeScript components with semantic HTML, proper state, accessible forms and navigation. Every apparent affordance must work or be explicitly disabled with an explanation.
+- Use refined layouts, text hierarchy and responsive art direction; break predictable grids where it improves clarity, not at usability's expense. The marketing-site rules about mandatory giant headings, pinned scroll scenes or "no cards" do **not** apply to the student app.
+- Build purposeful high-impact motion for welcome, unlocking, chapter transitions and graduation; use subtle feedback for routine actions. Prefer CSS where sufficient; use Motion only when justified. Respect `prefers-reduced-motion`.
+- Prioritize 320–430px phones, then tablet/desktop. Avoid horizontal overflow, awkward image crops, overlapping fixed controls and tiny tap targets.
+- Derive display state from shared domain logic; do not hard-code decorative progress percentages. Have loading, empty, error, completion and recovery states.
+- Before finishing a component, review visual fidelity, keyboard behavior, contrast, responsive scaling, real interaction and asset provenance. Refine any screen that could be mistaken for an unrelated generic productivity app.

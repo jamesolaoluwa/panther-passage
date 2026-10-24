@@ -1,0 +1,12 @@
+---
+description: Accessibility, privacy, reliability and test expectations
+alwaysApply: true
+---
+
+# Quality and accessibility
+- Target WCAG 2.2 AA for relevant web/app interactions: semantic structure, labeled forms, sufficient contrast, visible keyboard focus, touch-friendly targets and focus management.
+- Milestone map nodes must be keyboard reachable and accompanied by an accessible structured/list view; communicate statuses with text/icons, not only color. Honor reduced motion.
+- Use fictional personas and local demo data; no real student PII, fake credential prompts, or fabricated academic records. Clearly label mock events, RSVP and planning data as simulated.
+- Validate user inputs; handle storage corruption, missing assets, empty lists, invalid dates and unavailable content gracefully.
+- Test critical flows end to end: new student -> onboarding -> journey -> task -> unlock -> achievement -> persisted refresh; in-progress and almost-graduated states; scenario reset and finale.
+- Only report build, tests, audits and visual checks as passing after actually running them. Document incomplete requirements honestly in `docs/FINAL_BUILD_AUDIT.md`.

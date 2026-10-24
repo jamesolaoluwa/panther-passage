@@ -1,0 +1,22 @@
+# Known limitations
+
+- The journey artwork is one campus scene with five painted medallions. The lower two are always M01, Discover Your Pathway, and M02, Build Your Graduation Readiness Plan. The upper three follow the student’s current canonical steps. Milestones beyond that window stay in the fifteen-step list. The picture is not repeated, and no extra campus landmarks were invented.
+- The full phone screenshot included a header and a Journey / Resources / Community / Profile tab bar. Those regions were cropped out. The app keeps its own header and the approved Home / My Passage / Explore / My Chapter navigation.
+- Welcome is still the approved image rather than live headline text. Replacing that image with HTML type would redesign the approved screen. Get Started is a real transparent control over the drawn button.
+- The milestone detail screen uses catalog titles and tasks. M01 and M02 now use the approved names Discover Your Pathway and Build Your Graduation Readiness Plan. Optional scripture and prayer live on their own pages and do not count toward readiness. No approved per-step medallion file exists; the small mark on the detail screen is a temporary fallback, separate from the painted map.
+- M04 is now Name Your Professional Direction. It is still required in the catalog graph, so later milestones still depend on it. Students who did not choose career are not sent there when another open step exists. Résumé building, résumé review, and interview practice were removed from the active experience. See `docs/PRODUCT_FIDELITY_AUDIT.md`.
+- Chapter crest files named in `08_Demo_Data/achievements.json` are not in the asset library. Achievements name each crest and use a chapter monogram as a text fallback.
+- The finale reuses the approved onboarding campus footer. A separate finale illustration was not supplied.
+- The journey screen uses its own header, so the shared logo header is hidden there. Home shows the logo, the profile icon, and a compact scripture preview.
+- Scripture of the Day on Home is optional public-domain King James text. The prayer and the reflections stay on their own pages and do not count toward readiness.
+- The bottom navigation sticks to the viewport, so it can cover a control at the bottom of the screen until the page is scrolled. Main content has extra bottom padding so the end of a page can clear it.
+- Tablet and desktop layout widens the main column in steps: 430px on phones, 680px from 744px wide, 760px from 768px wide, and 1040px from 1024px wide. The 680px step keeps iPad mini portrait from showing a narrow phone strip. The journey picture stays at most 32rem wide so the portrait artwork is not stretched, and the journey screen moves to a two-column map and list from 900px.
+- Onboarding uses a 620px content column from 744px wide, and the approved campus footer spans the full screen width, capped at 860px and centered. The footer image is never cropped or stretched; it only scales by width.
+- The milestone task dialog is capped at the viewport height and scrolls inside itself, so the on-screen keyboard cannot hide the complete or close controls.
+- A web app manifest and Apple web-app meta tags let the demo launch full screen from the home screen. No custom home-screen icon is bundled, because the approved logo is a wordmark and must not be approximated into an app icon; the device substitutes a page snapshot.
+- Resource links in the dataset are null. Guides have no external destination.
+- Event capacity is a simulated count. RSVP does not contact an event system.
+- The countdown uses a simulated Baccalaureate date of May 9, 2027. Commencement remains May 15, 2027 on the student records and is not the countdown. No official Baccalaureate date is in the project documents. The running app uses a presenter clock of March 28, 2027 unless a test passes another date. Onboarding terms are not converted into either date.
+- Majors are a labeled sample list, not an official program catalog.
+- The production JavaScript bundle is one chunk of about 518 kB before gzip. Vite warns about that size.
+- Browser verification temporarily checked one Avery Brooks task, saved a guide, and saved an RSVP. Those three demonstration edits were removed afterward. Use Profile reset if a later session needs the original seed.

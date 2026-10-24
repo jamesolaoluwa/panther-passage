@@ -1,0 +1,42 @@
+[
+  {
+    "id": "P1",
+    "title": "Find Your Footing",
+    "daysRemaining": "100–81",
+    "summary": "Reflect on who you are and locate your starting point.",
+    "theme": "Identity & intention",
+    "order": 1
+  },
+  {
+    "id": "P2",
+    "title": "Build Your Toolkit",
+    "daysRemaining": "80–61",
+    "summary": "Translate ambitions into tangible career and life readiness skills.",
+    "theme": "Readiness & resources",
+    "order": 2
+  },
+  {
+    "id": "P3",
+    "title": "Make Your Moves",
+    "daysRemaining": "60–41",
+    "summary": "Turn preparation into practical steps, connections, and choices.",
+    "theme": "Action & connection",
+    "order": 3
+  },
+  {
+    "id": "P4",
+    "title": "Ready for What’s Next",
+    "daysRemaining": "40–21",
+    "summary": "Develop financial, wellness, and transition plans.",
+    "theme": "Confidence & continuity",
+    "order": 4
+  },
+  {
+    "id": "P5",
+    "title": "Carry It Forward",
+    "daysRemaining": "20–0",
+    "summary": "Celebrate growth, document legacy, and leave with a next-step plan.",
+    "theme": "Legacy & launch",
+    "order": 5
+  }
+]

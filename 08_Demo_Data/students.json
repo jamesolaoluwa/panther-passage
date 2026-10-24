@@ -1,0 +1,73 @@
+[
+  {
+    "id": "S-A",
+    "name": "Jordan Ellis",
+    "year": "Senior",
+    "graduationDate": "2027-05-15",
+    "pathway": "career",
+    "interests": [
+      "design",
+      "community"
+    ],
+    "avatarInitials": "JE",
+    "currentChapter": "P1",
+    "completedMilestoneIds": [],
+    "scenario": "new",
+    "fictional": true
+  },
+  {
+    "id": "S-B",
+    "name": "Avery Brooks",
+    "year": "Senior",
+    "graduationDate": "2027-05-15",
+    "pathway": "graduate-school",
+    "interests": [
+      "public health",
+      "research"
+    ],
+    "avatarInitials": "AB",
+    "currentChapter": "P3",
+    "completedMilestoneIds": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07"
+    ],
+    "scenario": "in-progress",
+    "fictional": true
+  },
+  {
+    "id": "S-C",
+    "name": "Morgan Reed",
+    "year": "Senior",
+    "graduationDate": "2027-05-15",
+    "pathway": "entrepreneurship",
+    "interests": [
+      "entrepreneurship",
+      "mentoring"
+    ],
+    "avatarInitials": "MR",
+    "currentChapter": "P5",
+    "completedMilestoneIds": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14"
+    ],
+    "scenario": "almost-graduated",
+    "fictional": true
+  }
+]

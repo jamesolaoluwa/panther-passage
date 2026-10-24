@@ -1,0 +1,420 @@
+[
+  {
+    "id": "M01",
+    "chapterId": "P1",
+    "sequence": 1,
+    "title": "Discover Your Pathway",
+    "slug": "discover-your-pathway",
+    "category": "identity",
+    "description": "Name the direction you want life after graduation to serve, and save the goals that matter to you.",
+    "purpose": "Grow practical confidence through identity preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 10,
+    "required": true,
+    "dependsOn": [],
+    "taskIds": [
+      "T011",
+      "T012",
+      "T013"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Discover Your Pathway complete. Your direction is saved.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M02",
+    "chapterId": "P1",
+    "sequence": 2,
+    "title": "Build Your Graduation Readiness Plan",
+    "slug": "build-your-graduation-readiness-plan",
+    "category": "identity",
+    "description": "Set the readiness priorities that will guide the rest of your passage.",
+    "purpose": "Grow practical confidence through identity preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 15,
+    "required": true,
+    "dependsOn": [
+      "M01"
+    ],
+    "taskIds": [
+      "T021",
+      "T022",
+      "T023"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Build Your Graduation Readiness Plan complete. Your priorities are saved.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M03",
+    "chapterId": "P1",
+    "sequence": 3,
+    "title": "Collect Your Story",
+    "slug": "collect-your-story",
+    "category": "identity",
+    "description": "Identify experiences and strengths worth carrying forward.",
+    "purpose": "Grow practical confidence through identity preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 20,
+    "required": false,
+    "dependsOn": [
+      "M02"
+    ],
+    "taskIds": [
+      "T031",
+      "T032",
+      "T033"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": "A01",
+    "points": 15,
+    "successCopy": "Collect Your Story complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M04",
+    "chapterId": "P2",
+    "sequence": 4,
+    "title": "Name Your Professional Direction",
+    "slug": "name-your-professional-direction",
+    "category": "career",
+    "description": "Describe the kind of contribution you want to make. This step does not build a résumé.",
+    "purpose": "Grow practical confidence through career preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 10,
+    "required": true,
+    "dependsOn": [
+      "M02"
+    ],
+    "taskIds": [
+      "T041",
+      "T042",
+      "T043"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Name Your Professional Direction complete. Your direction is saved.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M05",
+    "chapterId": "P2",
+    "sequence": 5,
+    "title": "Introduce Your Future Self",
+    "slug": "introduce-your-future-self",
+    "category": "career",
+    "description": "Create a succinct personal introduction and portfolio note.",
+    "purpose": "Grow practical confidence through career preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 15,
+    "required": true,
+    "dependsOn": [
+      "M04"
+    ],
+    "taskIds": [
+      "T051",
+      "T052",
+      "T053"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Introduce Your Future Self complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M06",
+    "chapterId": "P2",
+    "sequence": 6,
+    "title": "Make a Connection",
+    "slug": "make-a-connection",
+    "category": "network",
+    "description": "Prepare a thoughtful outreach message to a mentor or alum.",
+    "purpose": "Grow practical confidence through network preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 20,
+    "required": false,
+    "dependsOn": [
+      "M05"
+    ],
+    "taskIds": [
+      "T061",
+      "T062",
+      "T063"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": "A02",
+    "points": 15,
+    "successCopy": "Make a Connection complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M07",
+    "chapterId": "P3",
+    "sequence": 7,
+    "title": "Explore Your Options",
+    "slug": "explore-your-options",
+    "category": "planning",
+    "description": "Compare career, graduate school, service or entrepreneurship paths.",
+    "purpose": "Grow practical confidence through planning preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 10,
+    "required": true,
+    "dependsOn": [
+      "M05"
+    ],
+    "taskIds": [
+      "T071",
+      "T072",
+      "T073"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Explore Your Options complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M08",
+    "chapterId": "P3",
+    "sequence": 8,
+    "title": "Choose a Next Opportunity",
+    "slug": "choose-a-next-opportunity",
+    "category": "planning",
+    "description": "Turn your direction into one real opportunity to explore. This step is not interview practice.",
+    "purpose": "Grow practical confidence through career preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 15,
+    "required": true,
+    "dependsOn": [
+      "M07"
+    ],
+    "taskIds": [
+      "T081",
+      "T082",
+      "T083"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Choose a Next Opportunity complete. Your next action is saved.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M09",
+    "chapterId": "P3",
+    "sequence": 9,
+    "title": "Find a Support Circle",
+    "slug": "find-a-support-circle",
+    "category": "network",
+    "description": "Map people and groups who can support your transition.",
+    "purpose": "Grow practical confidence through network preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 20,
+    "required": false,
+    "dependsOn": [
+      "M08"
+    ],
+    "taskIds": [
+      "T091",
+      "T092",
+      "T093"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": "A03",
+    "points": 15,
+    "successCopy": "Find a Support Circle complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M10",
+    "chapterId": "P4",
+    "sequence": 10,
+    "title": "Map Your Money",
+    "slug": "map-your-money",
+    "category": "finance",
+    "description": "Build a sample first-month budget using fictional amounts.",
+    "purpose": "Grow practical confidence through finance preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 10,
+    "required": true,
+    "dependsOn": [
+      "M08"
+    ],
+    "taskIds": [
+      "T101",
+      "T102",
+      "T103"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Map Your Money complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M11",
+    "chapterId": "P4",
+    "sequence": 11,
+    "title": "Plan Your Wellbeing",
+    "slug": "plan-your-wellbeing",
+    "category": "wellness",
+    "description": "Design a sustainable routine for transition stress.",
+    "purpose": "Grow practical confidence through wellness preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 15,
+    "required": true,
+    "dependsOn": [
+      "M10"
+    ],
+    "taskIds": [
+      "T111",
+      "T112",
+      "T113"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Plan Your Wellbeing complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M12",
+    "chapterId": "P4",
+    "sequence": 12,
+    "title": "Explore a City or Community",
+    "slug": "explore-a-city-or-community",
+    "category": "planning",
+    "description": "Compare living, commuting, and belonging priorities.",
+    "purpose": "Grow practical confidence through planning preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 20,
+    "required": false,
+    "dependsOn": [
+      "M11"
+    ],
+    "taskIds": [
+      "T121",
+      "T122",
+      "T123"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": "A04",
+    "points": 15,
+    "successCopy": "Explore a City or Community complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M13",
+    "chapterId": "P5",
+    "sequence": 13,
+    "title": "Create Your 30-Day Launch Plan",
+    "slug": "create-your-30-day-launch-plan",
+    "category": "planning",
+    "description": "Break an aspiration into immediate doable steps.",
+    "purpose": "Grow practical confidence through planning preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 10,
+    "required": true,
+    "dependsOn": [
+      "M11"
+    ],
+    "taskIds": [
+      "T131",
+      "T132",
+      "T133"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Create Your 30-Day Launch Plan complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M14",
+    "chapterId": "P5",
+    "sequence": 14,
+    "title": "Leave a Legacy Note",
+    "slug": "leave-a-legacy-note",
+    "category": "legacy",
+    "description": "Write advice for the next graduating class.",
+    "purpose": "Grow practical confidence through legacy preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 15,
+    "required": true,
+    "dependsOn": [
+      "M13"
+    ],
+    "taskIds": [
+      "T141",
+      "T142",
+      "T143"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": null,
+    "points": 25,
+    "successCopy": "Leave a Legacy Note complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  },
+  {
+    "id": "M15",
+    "chapterId": "P5",
+    "sequence": 15,
+    "title": "Cross the Threshold",
+    "slug": "cross-the-threshold",
+    "category": "legacy",
+    "description": "Review your preparation and enter your next chapter.",
+    "purpose": "Grow practical confidence through legacy preparation.",
+    "emotionalObjective": "Feel ownership over a concrete next step.",
+    "estimatedMinutes": 20,
+    "required": true,
+    "dependsOn": [
+      "M13"
+    ],
+    "taskIds": [
+      "T151",
+      "T152",
+      "T153"
+    ],
+    "completionRule": "all tasks checked AND saved artifact when relevant",
+    "rewardId": "A05",
+    "points": 15,
+    "successCopy": "Cross the Threshold complete. You made a meaningful move toward your next chapter.",
+    "cta": "Begin milestone",
+    "demoAsset": "original vector chapter art; fallback to styled CSS",
+    "status": "prototype-proposed"
+  }
+]
