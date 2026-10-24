@@ -43,7 +43,9 @@ A warning appears when local storage fails. Progress then lasts only for that vi
 
 ## Recording the demo on iPad Pro 13-inch (M4)
 
-The recording target is the **iPad Pro 13-inch (M4) Simulator** in portrait. The product is the deployed web app at `https://panther-passage.onrender.com`, loaded by a thin Expo Go WebView so Safari chrome is not in the frame. Use your own external recorder.
+The recording target is the **iPad Pro 13-inch (M4) Simulator**, portrait or landscape. The product is the Panther Passage web app, loaded by a thin Expo Go WebView so Safari chrome is not in the frame. Use your own external recorder.
+
+The shell currently loads a **local production server** (`http://localhost:4174`) so the latest fixes show immediately. Keep `npm run preview -- --port 4174 --host` running from the repo root during the session. See `ipad-shell/README.md`. The deployed `https://panther-passage.onrender.com` is the fallback.
 
 The simulator has already been prepared in this session:
 
