@@ -12,14 +12,15 @@ function renderShell(path = '/') {
 }
 
 describe('mobile shell', () => {
-  it('starts Jordan on the image-only welcome screen with nothing drawn over it', () => {
+  it('starts Jordan on the welcome screen with the campus hero and a single call to action', () => {
     renderShell()
     expect(screen.getByRole('img', { name: WELCOME_DESCRIPTION })).toHaveAttribute(
       'src',
-      '/assets/panther-passage/03_Welcome/Welcome_Approved_Frameless.png',
+      '/assets/panther-passage/03_Welcome/Philander_Campus_Hero.png',
     )
-    const getStarted = screen.getByRole('button', { name: 'Get Started' })
-    expect(getStarted).toBeEmptyDOMElement()
+    expect(screen.getByRole('img', { name: 'Disney on the Yard' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Philander Smith University' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Get Started' })).toHaveTextContent('Get Started')
     expect(screen.queryByRole('navigation', { name: 'Primary' })).not.toBeInTheDocument()
     expect(screen.queryByRole('link', { name: 'Profile' })).not.toBeInTheDocument()
     expect(screen.queryByText(/days until graduation/)).not.toBeInTheDocument()

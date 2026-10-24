@@ -1,5 +1,6 @@
-import { Outlet, Link, useLocation } from 'react-router-dom'
+import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 import { m } from 'motion/react'
+import { ArrowLeft } from '@phosphor-icons/react'
 import { logoPath } from '../../assets/registry'
 import { ProfileAvatar } from '../profile/ProfileAvatar'
 import { usePassage } from '../../state/PassageContext'
@@ -18,13 +19,25 @@ function isJourneyMap(pathname: string) {
   return pathname === '/journey'
 }
 
+// The four primary destinations reached from the bottom navigation never need a back control.
+const PRIMARY_TABS = new Set(['/home', '/journey', '/resources', '/next-chapter'])
+
 export function AppShell() {
   const location = useLocation()
+  const navigate = useNavigate()
   const { warning, progress, student } = usePassage()
   const showNav = !isQuietRoute(location.pathname)
   const milestoneDetail = isMilestoneDetail(location.pathname)
   const journeyMap = isJourneyMap(location.pathname)
   const ownHeader = milestoneDetail || journeyMap
+  const showBack = !ownHeader && !PRIMARY_TABS.has(location.pathname)
+
+  const goBack = () => {
+    // Prefer real history so the control returns where the student came from;
+    // fall back to Home when the page was opened directly (e.g. a deep link).
+    if (window.history.length > 1) navigate(-1)
+    else navigate('/home')
+  }
 
   if (isQuietRoute(location.pathname)) {
     return (
@@ -47,9 +60,23 @@ export function AppShell() {
         {ownHeader ? null : (
           <header className="pt-[max(0.85rem,env(safe-area-inset-top))]">
             <div className="flex items-center justify-between gap-3 px-5">
-              <Link to="/" aria-label="Panther Passage" className="block max-w-[13rem] rounded-sm">
-                <img src={logoPath} alt="" className="h-16 w-auto object-contain object-left" />
-              </Link>
+              <div className="flex min-w-0 items-center gap-1">
+                {showBack ? (
+                  <m.button
+                    type="button"
+                    onClick={goBack}
+                    aria-label="Go back"
+                    whileTap={{ scale: 0.88 }}
+                    transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+                    className="-ml-1 inline-flex size-11 shrink-0 items-center justify-center rounded-full text-evergreen"
+                  >
+                    <ArrowLeft size={24} weight="bold" aria-hidden="true" />
+                  </m.button>
+                ) : null}
+                <Link to="/" aria-label="Panther Passage" className="block max-w-[13rem] rounded-sm">
+                  <img src={logoPath} alt="" className="h-16 w-auto object-contain object-left" />
+                </Link>
+              </div>
               <Link
                 to="/profile"
                 aria-label="Profile"

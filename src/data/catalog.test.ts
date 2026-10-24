@@ -30,6 +30,7 @@ describe('demo datasets', () => {
       'journey-map-artwork',
       'onboarding-campus-footer',
       'welcome-screen',
+      'welcome-hero',
       'wordmark',
     ])
   })

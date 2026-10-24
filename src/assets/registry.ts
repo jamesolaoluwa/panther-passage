@@ -20,6 +20,17 @@ export const welcomeScreenImage = {
   getStartedPixels: { x: 122, y: 858, width: 330, height: 62 },
 }
 
+/** Full-bleed campus photograph for the redesigned welcome screen. */
+export const welcomeHero = {
+  path: `${publicRoot}/03_Welcome/Philander_Campus_Hero.png`,
+  width: 1280,
+  height: 807,
+}
+
+/** Third-party brand marks shown together as a co-brand lockup on the welcome screen. */
+export const philanderSmithLogo = `${publicRoot}/01_Branding/Partners/Philander_Smith_University.png`
+export const disneyOnTheYardLogo = `${publicRoot}/01_Branding/Partners/Disney_On_The_Yard.png`
+
 export const journeyMapArtwork = {
   path: `${publicRoot}/04_Journey_Map/Mobile/Journey_Map_Campus_Artwork.png`,
   width: 576,
@@ -58,7 +69,21 @@ export const assetRegistry: AssetRecord[] = [
     standing: 'approved',
     publicPath: welcomeScreenImage.path,
     sourcePath: 'User upload, 2026-10-23 (frameless export of the approved welcome design)',
-    note: 'Shown whole and unmodified. Byte-identical to the upload; SHA-256 EE39F884…30C7F4.',
+    note: 'Approved baked welcome composition. Retained as an asset and error-fallback reference; the live welcome screen was redesigned (2026-10-24) at user direction into a full-bleed hero layout.',
+  },
+  {
+    id: 'welcome-hero',
+    standing: 'approved',
+    publicPath: welcomeHero.path,
+    sourcePath: 'avatars_images/PhilanderHeroImg.png (user upload, 2026-10-24)',
+    note: 'User-supplied Philander Smith campus photograph used full-bleed on the redesigned welcome screen. Pixels unchanged.',
+  },
+  {
+    id: 'partner-lockup',
+    standing: 'reference',
+    publicPath: philanderSmithLogo,
+    sourcePath: 'avatars_images/{PSULogo,DisneyLogo}.png (user upload, 2026-10-24)',
+    note: 'Third-party brand marks (Philander Smith University and the Disney on the Yard program) supplied by the user for a Disney on the Yard submission context. Shown as a co-brand credit lockup at the user’s direction. Not an invented partnership asserted by the app, and not modified.',
   },
   {
     id: 'wordmark',
